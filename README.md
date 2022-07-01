@@ -1,9 +1,6 @@
 # Casa-de-cultura
 
-# Tecnologias usadas
-
-* HTML
-* CSS
+* Projeto feito apenas em HTML e CSS
 
 # Como executar o projeto
 
