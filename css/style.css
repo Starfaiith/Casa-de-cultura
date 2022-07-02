@@ -7,7 +7,8 @@
 
 html {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 a {
@@ -35,6 +36,7 @@ p {
     line-height: 2.5rem;
     font-weight: 300px;
     letter-spacing: .05rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .oficina-title {
@@ -49,35 +51,36 @@ p {
 }
 
 .oficina-title span {
-    color: #1ecbe1;
+    color: #2D2E81;
 }
 
 .cta {
     display: inline-block;
     padding: 10px 30px;
-    color: #1ecbe1;
-    background-color: transparent;
-    border: 2px solid #e1341e;
+    color: #ffffff;
+    background-color: #11eed46e;
+    border: 2px solid #11EE66;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
+    transition: .6s ease;
+    transition-property: background-color, color, border;
 }
 
 .cta:hover {
-    color: white;
-    background-color: #e1341e;
+    color: #2D2E81;
+    background-color: #11eed4d0;
+    border: 2px solid #2D2E81;
 }
 
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .brand h1 span{
-    color: #1ecbe1;
+    color: #ffffff;
 }
 
 /* Hero Section */
@@ -117,6 +120,8 @@ p {
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s;
+
+
 }
 
 #hero h1:nth-child(1) {
@@ -135,8 +140,8 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background: #1ecbe1;
-    animation: text_reveal_box 1s ease;
+    background: #11eed4;
+    animation: text_reveal_box 1s ease forwards;
     animation-delay: .3s;
 }
 
@@ -306,18 +311,18 @@ p {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 80px 20px;
+    padding-bottom: 0px;
 }
 
 #about .col-left {
     width: 250px;
     height: 360px;
-
+    max-width: 40%;
 }
 
-#about col-right {
+#about .col-right {
     width: 100%;
-
 }
 
 #about .col-right h2 {
@@ -329,27 +334,55 @@ p {
 
 #about .col-right p {
     margin-bottom: 20px;
-
+    padding-left: 20px;
+    text-align: justify;
 }
 
 #about .col-left .about-img {
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid white;
-    z-index: 1;
+    border: 7px solid #2D2E81;
 }
 
-#about .col-left .about-img::after {
-    content: '';
-    position: absolute;
-    left: -33px;
-    top: 19px;
-    height: 98%;
-    width: 98%;
-    border: 7px solid #1ecbe1;
-    z-index: -1;
+#about .about-inverted {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding: 50px 20px;
+}
 
+
+#about .col-left-inverted {
+    width: 250px;
+    height: 360px;
+    max-width: 40%;
+}
+
+#about .col-right-inverted {
+    width: 100%;
+}
+
+#about .col-right-inverted h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right-inverted p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about .col-left-inverted  .about-img-inverted {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 7px solid #2D2E81;
 }
 
 /* Contato */
@@ -473,7 +506,8 @@ p {
 
 @keyframes text_reveal {
     100% {
-        color: lightgray;
+        color: #fafdfd;
+
     }
 
 
@@ -481,7 +515,7 @@ p {
 
 @keyframes text_reveal_name {
     100% {
-        color: #1ecbe1;
+        color: #11eed4;
         font-weight: 500px;
     }
 
@@ -555,20 +589,52 @@ p {
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid #1ecbe1;
+        border: 10px solid #2a85a3;
         
     }
 
-    #about .col-right {
+    #about .about-inverted {
+        flex-direction: row-reverse;
+    }
+
+    #about .col-right-inverted {
+        text-align: right;
+        padding: 30px
+    }
+
+    #about .col-right-inverted h1 {
+        text-align: center;
+
+    }
+
+
+    #about .col-left-inverted  {
+        width: 1500px;
+        height: 400px;
+        padding-right: 60px;
+
+    }
+
+    #about .about .col-left-inverted .about-img-inverted::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid #2a85a3;
+        
+    }
+
+    #about .col-right-inverted {
         text-align: left;
         padding: 30px
     }
 
-    #about .col-right h1 {
-        text-align: left;
+    #about .col-right-inverted h1 {
+        text-align: rights;
     }
 
     /* contact */
+    
     #contact .contato {
         flex-direction: column;
         padding: 60px 0;
