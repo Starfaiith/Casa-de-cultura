@@ -181,13 +181,13 @@ p {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    border-radius: 10px;
     background-image: url(../img/casarao-bg.jpg);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border: 5px solid #2D2E81;
 }
 
 #oficinas .oficina-item::after {
@@ -247,7 +247,7 @@ p {
     width: 80%;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 10px;
+
 }
 
 #agenda .project-info {
@@ -549,26 +549,16 @@ p {
 
     /* agenda */
     #agenda .project-item {
-        flex-direction: row;
+        flex-direction: column;
     }
 
-    #agenda .project-item:nth-child(even){
-        flex-direction: row-reverse;
-    }
-
-    #agenda .project-item {
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-
+    
     #agenda .allprojects .project-info {
-        height: 100%;
+        height: 40%;
     }
 
     #agenda .allprojects .project-img {
-        height: 100%;
+        height: 40%;
     }
 
     /* Sobre */
