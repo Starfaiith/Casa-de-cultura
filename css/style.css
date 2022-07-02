@@ -140,7 +140,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background: #11eed4;
+    background: #2D2E81;
     animation: text_reveal_box 1s ease forwards;
     animation-delay: .3s;
 }
@@ -226,6 +226,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+    
 }
 
 #agenda .agenda-header h1 {
@@ -237,6 +238,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 #agenda .project-item {
@@ -247,6 +249,7 @@ p {
     width: 80%;
     margin: 20px auto;
     overflow: hidden;
+    border: 5px solid #2D2E81;
 
 }
 
@@ -259,8 +262,8 @@ p {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-color: black;
-    opacity: .8;
+    background-color: #2D2E81;
+    opacity: 0.9;
 }
 
 #agenda .project-info h1 {
