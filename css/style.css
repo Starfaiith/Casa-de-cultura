@@ -140,7 +140,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background: #2D2E81;
+    background: #11eed4;
     animation: text_reveal_box 1s ease forwards;
     animation-delay: .3s;
 }
